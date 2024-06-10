@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        color: #525263;
+        margin: 0;
+        background-color: #fff;
+      }
+
+      h1 {
+        font-size: 24px;
+        color: #333;
+      }
+
+      div {
+        display: block;
+      }
+
+      .app {
+        height: 100%;
+      }
+
+      /* .app-body {
+        min-height: 100%;
+        margin: -54px auto -259px;
+        padding: 54px 0 259px;
+        position: relative;
+        
+      } */
+
+      .app-section {
+        padding: 70px 0;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .section-cards {
+        background-color: #634a5f;
+        padding: 0;
+        color: #ffffff;
+        font-size: 18px;
+      }
+
+      .section-cards .col-sm-3 a,
+      .section-cards .col-sm-3 a:hover,
+      .section-cards .col-sm-3 a:focus {
+        display: block;
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      a {
+        color: #428bca;
+        text-decoration: none;
+        background: transparent;
+        cursor: pointer;
+      }
+
+      .section-cards .col-sm-3 img {
+        margin: 80px 0 40px;
+        max-width: 40%;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+        border: 0;
+      }
+
+      .section-cards .col-sm-3 p {
+        margin: 0 0 40px 0;
+      }
+
+      ul#index_cards {
+        clear: both;
+        text-align: center;
+        height: 373px;
+        position: relative;
+        z-index: 50;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      ul#index_cards li {
+        height: 253px;
+        width: 200px;
+        display: block;
+        float: left;
+        padding: 0;
+        position: absolute;
+        background-color: #3a3a41;
+        border-radius: 10px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      ul#index_cards li:hover {
+        z-index: 5;
+      }
+
+      #card-1 {
+        transform: rotate(-20deg);
+        z-index: 1;
+        left: 5%;
+        top: 130px;
+      }
+
+      #card-2 {
+        transform: rotate(-15deg);
+        z-index: 2;
+        left: 18%;
+        top: 90px;
+      }
+
+      #card-3 {
+        transform: rotate(-5deg);
+        z-index: 4;
+        left: 30%;
+        top: 60px;
+      }
+
+      #card-4 {
+        transform: rotate(5deg);
+        z-index: 3;
+        right: 30%;
+        top: 60px;
+      }
+
+      #card-5 {
+        transform: rotate(15deg);
+        z-index: 2;
+        right: 18%;
+        top: 90px;
+      }
+
+      #card-6 {
+        transform: rotate(20deg);
+        z-index: 1;
+        right: 5%;
+        top: 140px;
+      }
+
+      ul#index_cards li:hover {
+        transform: scale(1.1);
+      }
+
+      ul#index_cards li img.thumb {
+        padding-top: 40px;
+        opacity: 0.5;
+        border-radius: 10px;
+        background-color: #3a3a41;
+        box-shadow: 0px 30px 50px 5px rgba(0, 0, 0, 0.4);
+        transition: all 0.3s ease-in-out;
+      }
+
+      ul#index_cards li:hover img.thumb {
+        opacity: 1;
+      }
+
+      ul#index_cards li .title {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 400;
+        background: rgba(132, 174, 233, 0.95);
+        border-radius: 10px 10px 0 0;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        box-sizing: border-box;
+      }
+
+      ul#index_cards li:hover .title {
+        opacity: 1;
+      }
+
+      .info {
+        width: 300px;
+        margin: 50px auto;
+        text-align: center;
+      }
+
+      .info span {
+        color: #666;
+        font-size: 12px;
+      }
+
+      .info span a {
+        color: #000;
+        text-decoration: none;
+      }
+
+      .info span .fa {
+        color: #00a6ea;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <div class="app-body">
+        <div class="container"></div>
+        <div class="app-section section-cards">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-3 text-center"></div>
+              <div class="col-sm-9">
+                <ul id="index_cards">
+                  <li id="card-1">
+                    <a href="#"
+                      ><img
+                        src="https://www.amcharts.com/visited_countries/static/img/cards/card_drawn.jpg"
+                        alt="Chalk chart"
+                        class="thumb"
+                    /></a>
+                    <a href="#" class="title"
+                      ><img
+                        src="https://www.amcharts.com/visited_countries/static/img/cards/title_drawn.png"
+                        alt="Chalk chart"
+                    /></a>
+                  </li>
+                  <li id="card-2">
+                    <a href="#"
+                      ><img
+                        src="https://www.amcharts.com/visited_countries/static/img/cards/card_drawn.jpg"
+                        alt="Stitched chart"
+                        class="thumb"
+                    /></a>
+                    <a href="#" class="title"
+                      ><img
+                        src="https://www.amcharts.com/visited_countries/static/img/cards/title_drawn.png"
+                        alt="Stitched chart"
+                    /></a>
+                  </li>
+                  <li id="card-3">
+                    <a href="#"
+                      ><img
+                        src="https://www.amcharts.com/visited_countries/static/img/cards/card_drawn.jpg"
+                        alt="Hand-drawn chart"
+                        class="thumb"
+                    /></a>
+                    <a href="#" class="title"
+                      ><img
+                        src="https://www.amcharts.com/visited_countries/static/img/cards/title_drawn.png"
+                        alt="Hand-drawn chart"
+                    /></a>
+                  </li>
+                  <li id="card-4">
+                    <a href="#"
+                      ><img
+                        src="https://www.amcharts.com/visited_countries/static/img/cards/card_drawn.jpg"
+                        alt="Rusty chart"
+                        class="thumb"
+                    /></a>
+                    <a href="#" class="title"
+                      ><img
+                        src="https://www.amcharts.com/visited_countries/static/img/cards/title_drawn.png"
+                        alt="Rusty chart"
+                    /></a>
+                  </li>
+                  <li id="card-5">
+                    <a href="#"
+                      ><img
+                        src="https://www.amcharts.com/visited_countries/static/img/cards/card_drawn.jpg"
+                        alt="Motion chart"
+                        class="thumb"
+                    /></a>
+                    <a
+                      href="https://www.amcharts.com/inspiration/motion-chart/"
+                      class="title"
+                      ><img
+                        src="https://www.amcharts.com/visited_countries/static/img/cards/title_drawn.png"
+                        alt="Motion chart"
+                    /></a>
+                  </li>
+                  <li id="card-6">
+                    <a href="#"
+                      ><img
+                        src="https://www.amcharts.com/visited_countries/static/img/cards/card_drawn.jpg"
+                        alt="Motion chart"
+                        class="thumb"
+                    /></a>
+                    <a
+                      href="https://www.amcharts.com/inspiration/motion-chart/"
+                      class="title"
+                      ><img
+                        src="https://www.amcharts.com/visited_countries/static/img/cards/title_drawn.png"
+                        alt="Motion chart"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
